@@ -12,6 +12,14 @@ function Home() {
   const [copied, setCopied] = useState(false);
 
   async function handleSubmit() {
+
+    const trimmedUrl = originalUrl.trim();
+
+    if (trimmedUrl === '') {
+      toast.error('URL cannot be empty');
+      return;
+    }
+
     try {
       const result = await fetch({ url: originalUrl });
 

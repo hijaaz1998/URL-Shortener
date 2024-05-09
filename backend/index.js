@@ -6,7 +6,7 @@ import cors from 'cors'
 
 const app  = express()
 const port = 8001
-connectDb('mongodb+srv://albertsebastian2525:PmexUjlxLFYwM0HE@cluster0.nxpesyb.mongodb.net/short_url?retryWrites=true&w=majority')
+connectDb(`mongodb+srv://hijaazmuhammed789:WCwcM0noOGkWVsUn@cluster0.u6txllu.mongodb.net/short_url?retryWrites=true&w=majority`)
 
 app.use(cors());
   app.use(express.json());

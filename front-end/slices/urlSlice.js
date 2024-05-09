@@ -14,8 +14,6 @@ const urlSlice = apiSlice.injectEndpoints({
             query:(data)=>({
                 url:`http://localhost:8001/redirect?shortid=${data}`,
                 method:'GET',
-
-
             })
         })
     })
